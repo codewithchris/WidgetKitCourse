@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(todos) { todo in
+            List(todos, id:\.id) { todo in
                 Text("\(todo.title): **\(todo.completed ? "completed" : "open")**")
             }
             .navigationTitle("My Todos")

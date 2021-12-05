@@ -7,9 +7,15 @@
 
 import Foundation
 
-struct Todo: Decodable, Identifiable {
+struct Todo: Decodable {
     let userId: Int
     let id: Int
     let title: String
     let completed: Bool
+}
+
+extension Todo {
+    static func preview(_ id: Int) -> Todo {
+        Todo(userId: 1, id: id, title: "Eat breakfast", completed: false)
+    }
 }
