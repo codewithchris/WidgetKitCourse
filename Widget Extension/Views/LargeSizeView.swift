@@ -27,7 +27,7 @@ struct LargeSizeView: View {
             .shadow(radius: 5)
             
             ForEach(entry.todos, id:\.id) { todo in
-                Link(destination: URL(string: "myapp://todo/\(entry.todos.first?.id ?? 0)")!) {
+                Link(destination: URL(string: "myapp://todo/\(todo.id)")!) {
                     HStack {
                         Circle()
                             .stroke(lineWidth: 2)
