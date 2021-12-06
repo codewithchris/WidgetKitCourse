@@ -37,5 +37,6 @@ struct MediumSizeView: View {
         } label: {
             Label("My Todos", systemImage: "list.dash")
         }
+        .widgetURL(URL(string: "myapp://todo/\(entry.todos.first?.id ?? 0)"))
     }
 }
