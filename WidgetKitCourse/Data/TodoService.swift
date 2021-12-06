@@ -33,8 +33,8 @@ final class TodoService {
         return todos
     }
     
-    func getLatestTodo() async throws -> Todo {
-        let todo: Todo = try await fetch(from: "todos/1")
+    func getTodo(with id: Int) async throws -> Todo {
+        let todo: Todo = try await fetch(from: "todos/\(id)")
         return todo
     }
 }

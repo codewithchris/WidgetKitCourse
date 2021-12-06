@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @State var todos: [Todo] = []
+    @State var selectedTodo: Todo?
     
     var body: some View {
         NavigationView {
             List(todos) { todo in
-                Text("\(todo.title): **\(todo.completed ? "completed" : "open")**")
+                Button {
+                    selectedTodo = todo
+                } label: {
+                    Text("\(todo.title): **\(todo.completed ? "completed" : "open")**")
+                }
+                .buttonStyle(.plain)
             }
             .navigationTitle("My Todos")
             .task {
@@ -22,6 +28,20 @@ struct ContentView: View {
                 } catch {
                     print(error)
                 }
+            }
+            .sheet(item: $selectedTodo) { todo in
+                GroupBox {
+                    VStack(alignment: .leading) {
+                        Text(todo.title)
+                            .font(.headline)
+                        
+                        Text(todo.completed ? "Completed" : "Open")
+                            .font(.subheadline)
+                    }
+                } label: {
+                    Label("Todo #\(todo.id)", systemImage: "person")
+                }
+                .padding()
             }
         }
     }
