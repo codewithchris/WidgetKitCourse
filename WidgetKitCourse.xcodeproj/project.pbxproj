@@ -13,7 +13,39 @@
 		5C658B0E27578E1A00435678 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C658B0D27578E1A00435678 /* Preview Assets.xcassets */; };
 		5C658B172757923A00435678 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C658B162757923A00435678 /* Todo.swift */; };
 		5C658B192757926700435678 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C658B182757926700435678 /* TodoService.swift */; };
+		5CA9F7BA275E56D600EAA6D2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9F7B9275E56D600EAA6D2 /* WidgetKit.framework */; };
+		5CA9F7BC275E56D600EAA6D2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA9F7BB275E56D600EAA6D2 /* SwiftUI.framework */; };
+		5CA9F7BF275E56D600EAA6D2 /* WidgetKitCourse_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9F7BE275E56D600EAA6D2 /* WidgetKitCourse_Widget.swift */; };
+		5CA9F7C1275E56D700EAA6D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA9F7C0275E56D700EAA6D2 /* Assets.xcassets */; };
+		5CA9F7C5275E56D700EAA6D2 /* WidgetKitCourse WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CA9F7B7275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CA9F7CB275E586200EAA6D2 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9F7CA275E586200EAA6D2 /* Provider.swift */; };
+		5CA9F7CD275E588B00EAA6D2 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9F7CC275E588B00EAA6D2 /* SimpleEntry.swift */; };
+		5CA9F7CF275E58A100EAA6D2 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA9F7CE275E58A100EAA6D2 /* WidgetView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CA9F7C3275E56D700EAA6D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C658AFB27578E1900435678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA9F7B6275E56D600EAA6D2;
+			remoteInfo = "WidgetKitCourse WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CA9F7C6275E56D700EAA6D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CA9F7C5275E56D700EAA6D2 /* WidgetKitCourse WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C658B0327578E1900435678 /* WidgetKitCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetKitCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +55,15 @@
 		5C658B0D27578E1A00435678 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C658B162757923A00435678 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5C658B182757926700435678 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		5CA9F7B7275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WidgetKitCourse WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA9F7B9275E56D600EAA6D2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5CA9F7BB275E56D600EAA6D2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5CA9F7BE275E56D600EAA6D2 /* WidgetKitCourse_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetKitCourse_Widget.swift; sourceTree = "<group>"; };
+		5CA9F7C0275E56D700EAA6D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA9F7C2275E56D700EAA6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA9F7CA275E586200EAA6D2 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		5CA9F7CC275E588B00EAA6D2 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		5CA9F7CE275E58A100EAA6D2 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +74,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CA9F7B4275E56D600EAA6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA9F7BC275E56D600EAA6D2 /* SwiftUI.framework in Frameworks */,
+				5CA9F7BA275E56D600EAA6D2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				5C658B0527578E1900435678 /* WidgetKitCourse */,
+				5CA9F7BD275E56D600EAA6D2 /* WidgetKitCourse Widget */,
+				5CA9F7B8275E56D600EAA6D2 /* Frameworks */,
 				5C658B0427578E1900435678 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				5C658B0327578E1900435678 /* WidgetKitCourse.app */,
+				5CA9F7B7275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +142,28 @@
 			path = "Feature Targets";
 			sourceTree = "<group>";
 		};
+		5CA9F7B8275E56D600EAA6D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CA9F7B9275E56D600EAA6D2 /* WidgetKit.framework */,
+				5CA9F7BB275E56D600EAA6D2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CA9F7BD275E56D600EAA6D2 /* WidgetKitCourse Widget */ = {
+			isa = PBXGroup;
+			children = (
+				5CA9F7BE275E56D600EAA6D2 /* WidgetKitCourse_Widget.swift */,
+				5CA9F7CE275E58A100EAA6D2 /* WidgetView.swift */,
+				5CA9F7C0275E56D700EAA6D2 /* Assets.xcassets */,
+				5CA9F7C2275E56D700EAA6D2 /* Info.plist */,
+				5CA9F7CA275E586200EAA6D2 /* Provider.swift */,
+				5CA9F7CC275E588B00EAA6D2 /* SimpleEntry.swift */,
+			);
+			path = "WidgetKitCourse Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,15 +174,34 @@
 				5C658AFF27578E1900435678 /* Sources */,
 				5C658B0027578E1900435678 /* Frameworks */,
 				5C658B0127578E1900435678 /* Resources */,
+				5CA9F7C6275E56D700EAA6D2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CA9F7C4275E56D700EAA6D2 /* PBXTargetDependency */,
 			);
 			name = WidgetKitCourse;
 			productName = WidgetKitCourse;
 			productReference = 5C658B0327578E1900435678 /* WidgetKitCourse.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5CA9F7B6275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA9F7C9275E56D700EAA6D2 /* Build configuration list for PBXNativeTarget "WidgetKitCourse WidgetExtension" */;
+			buildPhases = (
+				5CA9F7B3275E56D600EAA6D2 /* Sources */,
+				5CA9F7B4275E56D600EAA6D2 /* Frameworks */,
+				5CA9F7B5275E56D600EAA6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WidgetKitCourse WidgetExtension";
+			productName = "WidgetKitCourse WidgetExtension";
+			productReference = 5CA9F7B7275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,6 +214,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					5C658B0227578E1900435678 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					5CA9F7B6275E56D600EAA6D2 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -138,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				5C658B0227578E1900435678 /* WidgetKitCourse */,
+				5CA9F7B6275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +247,14 @@
 			files = (
 				5C658B0E27578E1A00435678 /* Preview Assets.xcassets in Resources */,
 				5C658B0B27578E1A00435678 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA9F7B5275E56D600EAA6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA9F7C1275E56D700EAA6D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +272,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CA9F7B3275E56D600EAA6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA9F7CD275E588B00EAA6D2 /* SimpleEntry.swift in Sources */,
+				5CA9F7CB275E586200EAA6D2 /* Provider.swift in Sources */,
+				5CA9F7CF275E58A100EAA6D2 /* WidgetView.swift in Sources */,
+				5CA9F7BF275E56D600EAA6D2 /* WidgetKitCourse_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CA9F7C4275E56D700EAA6D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA9F7B6275E56D600EAA6D2 /* WidgetKitCourse WidgetExtension */;
+			targetProxy = 5CA9F7C3275E56D700EAA6D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C658B0F27578E1A00435678 /* Debug */ = {
@@ -288,6 +413,7 @@
 		5C658B1227578E1A00435678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +443,7 @@
 		5C658B1327578E1A00435678 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +470,60 @@
 			};
 			name = Release;
 		};
+		5CA9F7C7275E56D700EAA6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WidgetKitCourse Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WidgetKitCourse Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fschweizer.WidgetKitCourse.WidgetKitCourse-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CA9F7C8275E56D700EAA6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WidgetKitCourse Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WidgetKitCourse Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fschweizer.WidgetKitCourse.WidgetKitCourse-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +541,15 @@
 			buildConfigurations = (
 				5C658B1227578E1A00435678 /* Debug */,
 				5C658B1327578E1A00435678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA9F7C9275E56D700EAA6D2 /* Build configuration list for PBXNativeTarget "WidgetKitCourse WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA9F7C7275E56D700EAA6D2 /* Debug */,
+				5CA9F7C8275E56D700EAA6D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
