@@ -43,6 +43,28 @@ struct ContentView: View {
                 }
                 .padding()
             }
+            .onOpenURL { url in
+                guard
+                    url.scheme == "myapp",
+                    url.host == "todo",
+                    let id = Int(url.pathComponents[1])
+                else {
+                    print("issue")
+                    return
+                }
+                
+                Task {
+                    do {
+                        let todo = try await TodoService.shared.getTodo(with: id)
+                        DispatchQueue.main.async {
+                            selectedTodo = todo
+                        }
+                    } catch {
+                        // handle error in an adequate way
+                        print(error)
+                    }
+                }
+            }
         }
     }
 }
